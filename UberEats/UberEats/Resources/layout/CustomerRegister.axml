@@ -52,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/phoneNumber"
                 android:hint="Phone Number"
+                android:inputType="phone"
                 android:layout_width="match_parent" />
         </LinearLayout>
         <TextView
@@ -68,11 +69,13 @@
             <EditText
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
+                android:inputType="textEmailAddress"
                 android:hint="Email"
                 android:layout_width="188.5dp" />
             <EditText
                 android:layout_height="wrap_content"
                 android:id="@+id/password"
+                android:inputType="textPassword"
                 android:hint="Password"
                 android:layout_width="191.5dp" />
         </LinearLayout>
@@ -105,6 +108,7 @@
             <EditText
                 android:layout_height="wrap_content"
                 android:id="@+id/expiryDate"
+                android:inputType="date"
                 android:hint="Expiry Date"
                 android:layout_width="188.5dp" />
             <EditText

@@ -1,3 +1,108 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:background="#566573"
+    android:minHeight="25px">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lblUsername"
+            android:layout_below="@+id/titleLogin"
+            android:layout_height="25dp"
+            android:layout_width="170dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:typeface="sans" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/txtUsername"
+            android:layout_below="@+id/lblUsername"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:hint="Username"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:textSize="14dp"
+            android:paddingBottom="1dp"
+            android:typeface="sans"
+            android:layout_marginRight="20dp" />
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_below="@+id/txtUsername"
+            android:layout_height="25dp"
+            android:layout_width="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:typeface="sans" />
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_below="@+id/lblPassword"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:hint="Password"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:textSize="14dp"
+            android:paddingBottom="1dp"
+            android:typeface="sans"
+            android:layout_marginRight="20dp" />
+        <LinearLayout
+            android:id="@+id/linearLayoutBtns"
+            android:layout_below="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btnLoginLL"
+                android:layout_width="187.0dp"
+                android:layout_height="35dp"
+                android:textSize="14dp"
+                android:text="Login"
+                android:typeface="sans"
+                android:background="#ff0986be"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="5dp" />
+            <Button
+                android:id="@+id/btnClearLL"
+                android:layout_width="161.0dp"
+                android:layout_height="35dp"
+                android:textSize="14dp"
+                android:text="Cancel"
+                android:typeface="sans"
+                android:background="#ff0986be"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

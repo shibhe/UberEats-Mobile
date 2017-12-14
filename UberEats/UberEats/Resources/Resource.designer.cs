@@ -1768,6 +1768,12 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0022
 			public const int bottom = 2131427362;
 			
+			// aapt resource value: 0x7f0b0084
+			public const int btnClearLL = 2131427460;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int btnLoginLL = 2131427459;
+			
 			// aapt resource value: 0x7f0b002e
 			public const int buttonPanel = 2131427374;
 			
@@ -1861,11 +1867,20 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0057
 			public const int lastName = 2131427415;
 			
+			// aapt resource value: 0x7f0b0080
+			public const int lblPassword = 2131427456;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int lblUsername = 2131427453;
+			
 			// aapt resource value: 0x7f0b0078
 			public const int line1 = 2131427448;
 			
 			// aapt resource value: 0x7f0b007a
 			public const int line3 = 2131427450;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int linearLayoutBtns = 2131427458;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -2035,6 +2050,9 @@ namespace UberEats
 			// aapt resource value: 0x7f0b003c
 			public const int titleDividerNoCustom = 2131427388;
 			
+			// aapt resource value: 0x7f0b007e
+			public const int titleLogin = 2131427454;
+			
 			// aapt resource value: 0x7f0b003a
 			public const int title_template = 2131427386;
 			
@@ -2043,6 +2061,12 @@ namespace UberEats
 			
 			// aapt resource value: 0x7f0b0039
 			public const int topPanel = 2131427385;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int txtPassword = 2131427457;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int txtUsername = 2131427455;
 			
 			// aapt resource value: 0x7f0b0062
 			public const int uber = 2131427426;
