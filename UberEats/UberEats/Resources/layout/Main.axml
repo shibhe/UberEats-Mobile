@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#17202A"
+    android:paddingTop="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:background="#2C3E50">
+        <EditText
+            android:layout_width="289.5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="Enter your delivery address" />
+        <Button
+            android:id="@+id/userLogin"
+            android:layout_width="85.0dp"
+            android:layout_height="wrap_content"
+            android:text="@android:string/search_go" />
+    </LinearLayout>
+    <RelativeLayout
+        android:background="#1B4F72"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="90dp">
+        <ImageView
+            android:src="@drawable/uber"
+            android:layout_marginLeft="25dp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/uberImg" />
+        <TextView
+            android:text="Uber Eats"
+            android:textSize="20sp"
+            android:textColor="#239B56"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/uberImg"
+            android:id="@+id/uber"
+            android:gravity="center"
+            android:layout_width="189.0dp"
+            android:layout_height="126.0dp" />
+        <Button
+            android:id="@+id/userLogin"
+            android:layout_width="159.0dp"
+            android:layout_toRightOf="@+id/uber"
+            android:layout_height="36.5dp"
+            android:text="Sign In" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169.5dp"
+        android:background="#F4F6F6"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="132.0dp"
+            android:src="@drawable/nandos"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333333"
+            android:text="Nandos"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#F4F6F6"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="136.5dp"
+            android:src="@drawable/steers"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="21.0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333333"
+            android:text="Steers"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ABB2B9"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Register by clicking one of the buttons below."
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="4dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:background="#2C3E50">
+        <Button
+            android:id="@+id/driverRegister"
+            android:layout_width="122.5dp"
+            android:layout_height="wrap_content"
+            android:text="Driver" />
+        <Button
+            android:id="@+id/custRegister"
+            android:layout_width="130.5dp"
+            android:layout_height="wrap_content"
+            android:text="Customer" />
+        <Button
+            android:id="@+id/resRegister"
+            android:layout_width="130.5dp"
+            android:layout_height="wrap_content"
+            android:text="Restaurant" />
+    </LinearLayout>
+</LinearLayout>
