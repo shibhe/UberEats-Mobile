@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#17202A"
-    android:paddingTop="3dp"
+    android:background="@drawable/food2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+<!--<LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,7 +78,7 @@
         android:padding="8dp">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="136.5dp"
+            android:layout_height="126.0dp"
             android:src="@drawable/steers"
             android:scaleType="centerCrop" />
         <TextView
@@ -119,6 +118,48 @@
             android:id="@+id/resRegister"
             android:layout_width="130.5dp"
             android:layout_height="wrap_content"
-            android:text="Restaurant" />
+            android:text="Restaurant" /> -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ubere"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#F6F9FC"
+            android:layout_marginTop="3dp"
+            android:textSize="15sp"
+            android:text="Is a food delivery platform powered by Uber"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp" />
     </LinearLayout>
-</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <Button
+            android:id="@+id/userLogin"
+            android:layout_width="178.5dp"
+            android:layout_weight="1"
+            android:background="#82E0AA"
+            android:layout_marginRight="2dp"
+            android:layout_height="51.5dp"
+            android:text="Sign In" />
+        <Button
+            android:id="@+id/showPopupMenu"
+            android:layout_width="207.5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="#82E0AA"
+            android:layout_height="49.0dp"
+            android:text="Sign Up" />
+    </LinearLayout>
+</RelativeLayout>

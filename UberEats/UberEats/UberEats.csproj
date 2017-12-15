@@ -115,6 +115,11 @@
     <AndroidResource Include="Resources\layout\DriverRegister.axml" />
     <AndroidResource Include="Resources\layout\UserLogin.axml" />
     <AndroidResource Include="Resources\drawable\ubere.png" />
+    <AndroidResource Include="Resources\drawable\food.jpg" />
+    <AndroidResource Include="Resources\drawable\food1.jpg" />
+    <AndroidResource Include="Resources\drawable\food2.jpg" />
+    <AndroidResource Include="Resources\drawable\food4.png" />
+    <AndroidResource Include="Resources\menu\userMenu.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -123,6 +128,7 @@
     <Folder Include="Model\" />
     <Folder Include="Helpers\" />
     <Folder Include="Services\" />
+    <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportv7appcompat">

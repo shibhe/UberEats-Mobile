@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 using UberEats.Activities;
+using System;
 
 namespace UberEats
 {
@@ -10,7 +11,7 @@ namespace UberEats
     public class MainActivity : Activity
     {
 
-        Button btnLogin, btnRestReg, btnCustReg, btnDriverReg;
+        Button btnLogin, showPopupMenu;
         Intent intent;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -21,31 +22,37 @@ namespace UberEats
             SetContentView(Resource.Layout.Main);
 
             btnLogin = FindViewById<Button>(Resource.Id.userLogin);
-            btnCustReg = FindViewById<Button>(Resource.Id.custRegister);
-            btnRestReg = FindViewById<Button>(Resource.Id.resRegister);
-            btnDriverReg = FindViewById<Button>(Resource.Id.driverRegister);
+           // btnCustReg = FindViewById<Button>(Resource.Id.custRegister);
+           // btnRestReg = FindViewById<Button>(Resource.Id.resRegister);
+            showPopupMenu = FindViewById<Button>(Resource.Id.showPopupMenu);
 
 
             btnLogin.Click += delegate {
                 intent = new Intent(this, typeof(UserLogin));
                 StartActivity(intent);
-            };
+             };
 
-            btnCustReg.Click += delegate {
-                intent = new Intent(this, typeof(CustomerRegister));
-                StartActivity(intent);
-            };
+            showPopupMenu.Click += (s, arg) => {
+                PopupMenu menu = new PopupMenu(this, showPopupMenu);
+                menu.Inflate(Resource.Menu.userMenu);
 
-            btnRestReg.Click += delegate {
-                intent = new Intent(this, typeof(RestaurantRegister));
-                StartActivity(intent);
+                menu.MenuItemClick += (s1, arg1) => {
+                   
+                    if (arg1.Item.ItemId == Resource.Id.customer){
+                        intent = new Intent(this, typeof(CustomerRegister));
+                        StartActivity(intent);
+                    }
+                    else if (arg1.Item.ItemId == Resource.Id.driver){
+                        intent = new Intent(this, typeof(DriverRegister));
+                        StartActivity(intent);
+                    }
+                    else if (arg1.Item.ItemId == Resource.Id.restaurant){
+                        intent = new Intent(this, typeof(RestaurantRegister));
+                        StartActivity(intent);
+                    }
+                };
+                menu.Show();
             };
-
-            btnDriverReg.Click += delegate {
-                intent = new Intent(this, typeof(DriverRegister));
-                StartActivity(intent);
-            };
-         
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+using System.Collections;
 using System.Collections.Generic;
 using Android.App;
 using Android.Content;
@@ -37,6 +38,7 @@ namespace UberEats.Activities
             register = FindViewById<Button>(Resource.Id.registerCust);
 
             register.Click += delegate {
+                
                 customer = new Customer
                 {
                     FirstName = FirstName.Text,
@@ -52,11 +54,14 @@ namespace UberEats.Activities
 
                 };
 
-                ListCustomer = new List<Customer>();
-                ListCustomer.Add(customer);
-                Toast.MakeText(this, "Successfully added", ToastLength.Long).Show();
-                Toast.MakeText(this, customer.FirstName + " " + customer.LastName , ToastLength.Long).Show();
 
+                ListCustomer = new List<Customer>
+                {
+                    customer
+                };
+
+                Toast.MakeText(this, "Successfully added", ToastLength.Long).Show();
+                Toast.MakeText(this, customer.FirstName + " " + customer.LastName, ToastLength.Long).Show();
                 intent = new Intent(this, typeof(UserLogin));
                 StartActivity(intent);
                 customer = new Customer();
