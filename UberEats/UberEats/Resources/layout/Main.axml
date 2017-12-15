@@ -14,6 +14,7 @@
             android:layout_height="200dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ubere"
+            android:id="@+id/uberImg"
             android:scaleType="centerCrop" />
         <TextView
             android:layout_width="200dp"
@@ -21,6 +22,7 @@
             android:textColor="#EC7063"
             android:layout_marginTop="3dp"
             android:textSize="15sp"
+            android:id="@+id/uberText"
             android:text="Is a food delivery platform powered by Uber"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="4dp" />
