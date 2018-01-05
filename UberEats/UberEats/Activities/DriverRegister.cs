@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace UberEats.Activities
 {
-    [Activity(Label = "DriverRegister")]
+    [Activity(Label = "Driver Register")]
     public class DriverRegister : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

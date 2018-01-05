@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace UberEats.Activities
 {
-    [Activity(Label = "RestaurantRegister")]
+    [Activity(Label = "Restaurant Register")]
     public class RestaurantRegister : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

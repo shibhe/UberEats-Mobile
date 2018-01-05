@@ -1,22 +1,23 @@
-﻿
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
+using Newtonsoft.Json;
 using UberEats.Model;
 
 namespace UberEats.Activities
 {
-    [Activity(Label = "CustomerRegister")]
+    [Activity(Label = "Customer Register")]
     public class CustomerRegister : Activity
     {
-
-        public List<Customer> ListCustomer;
-        public Customer customer;
+        public string url = "http://10.0.2.2:8080/api/Customers";
+        public HttpClient client;
         public EditText FirstName, LastName, PhoneNumber, Email, Password, CreditCard, CVV, ExpiryDate, ZipCode, UserRole;
-        public Button register;
+        public Button register, signIn;
         public Intent intent;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -36,10 +37,25 @@ namespace UberEats.Activities
             ExpiryDate = FindViewById<EditText>(Resource.Id.expiryDate);
             ZipCode = FindViewById<EditText>(Resource.Id.zipCode);
             register = FindViewById<Button>(Resource.Id.registerCust);
+            signIn = FindViewById<Button>(Resource.Id.btn_reset_password);
 
-            register.Click += delegate {
-                
-                customer = new Customer
+            register.Click += Insert_Click;
+
+            signIn.Click += delegate {
+                intent = new Intent(this, typeof(UserLogin));
+                StartActivity(intent);
+            };
+           
+        }
+
+        public async void Insert_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                client = new HttpClient();
+
+                var customer = new Customer
                 {
                     FirstName = FirstName.Text,
                     LastName = LastName.Text,
@@ -55,17 +71,32 @@ namespace UberEats.Activities
                 };
 
 
-                ListCustomer = new List<Customer>
-                {
-                    customer
-                };
+                var uri = new Uri(string.Format(url));
+                var json = JsonConvert.SerializeObject(customer);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                Toast.MakeText(this, "Successfully added", ToastLength.Long).Show();
-                Toast.MakeText(this, customer.FirstName + " " + customer.LastName, ToastLength.Long).Show();
-                intent = new Intent(this, typeof(UserLogin));
-                StartActivity(intent);
-                customer = new Customer();
-            };
+                HttpResponseMessage response = null;
+
+                response = await client.PostAsync(uri, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = await response.Content.ReadAsStringAsync();
+                    Customer custs = JsonConvert.DeserializeObject<Customer>(data);
+                    Toast.MakeText(this, "You are now registered", ToastLength.Long).Show();
+                    intent = new Intent(this, typeof(UserLogin));
+                    StartActivity(intent);
+                    this.OverridePendingTransition(Resource.Animation.abc_slide_in_top, Resource.Animation.abc_slide_out_bottom);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                Toast.MakeText(this, ex.ToString(), ToastLength.Long).Show();
+
+            }
+
         }
     }
 }

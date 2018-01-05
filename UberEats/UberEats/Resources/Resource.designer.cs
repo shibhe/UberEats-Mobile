@@ -26,6 +26,7 @@ namespace UberEats
 		
 		public static void UpdateIdValues()
 		{
+			global::OkHttpClient.Resource.String.library_name = global::UberEats.Resource.String.library_name;
 		}
 		
 		public partial class Animation
@@ -1621,76 +1622,88 @@ namespace UberEats
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int food = 2130837587;
+			public const int dijo = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int food1 = 2130837588;
+			public const int dijoo = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int food2 = 2130837589;
+			public const int dijoooo = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int food4 = 2130837590;
+			public const int food = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int lunchbox = 2130837591;
+			public const int food1 = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int nandos = 2130837592;
+			public const int food2 = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int nandps = 2130837593;
+			public const int food4 = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int notification_action_background = 2130837594;
+			public const int fooood = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int notification_bg = 2130837595;
+			public const int lunchbox = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notification_bg_low = 2130837596;
+			public const int nandos = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int notification_bg_low_normal = 2130837597;
+			public const int nandps = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int notification_bg_low_pressed = 2130837598;
+			public const int notification_action_background = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int notification_bg_normal = 2130837599;
+			public const int notification_bg = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_bg_normal_pressed = 2130837600;
+			public const int notification_bg_low = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_icon_background = 2130837601;
-			
-			// aapt resource value: 0x7f020069
-			public const int notification_template_icon_bg = 2130837609;
-			
-			// aapt resource value: 0x7f02006a
-			public const int notification_template_icon_low_bg = 2130837610;
+			public const int notification_bg_low_normal = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_tile_bg = 2130837602;
+			public const int notification_bg_low_pressed = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notify_panel_notification_icon_bg = 2130837603;
+			public const int notification_bg_normal = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int steers = 2130837604;
+			public const int notification_bg_normal_pressed = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int steerss = 2130837605;
+			public const int notification_icon_background = 2130837605;
+			
+			// aapt resource value: 0x7f02006d
+			public const int notification_template_icon_bg = 2130837613;
+			
+			// aapt resource value: 0x7f02006e
+			public const int notification_template_icon_low_bg = 2130837614;
 			
 			// aapt resource value: 0x7f020066
-			public const int uber = 2130837606;
+			public const int notification_tile_bg = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ubere = 2130837607;
+			public const int notify_panel_notification_icon_bg = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int UberEATS = 2130837608;
+			public const int steers = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int steerss = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int uber = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int ubere = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int UberEATS = 2130837612;
 			
 			static Drawable()
 			{
@@ -1705,8 +1718,8 @@ namespace UberEats
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0067
-			public const int action0 = 2131427431;
+			// aapt resource value: 0x7f0b0068
+			public const int action0 = 2131427432;
 			
 			// aapt resource value: 0x7f0b0047
 			public const int action_bar = 2131427399;
@@ -1729,17 +1742,17 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0024
 			public const int action_bar_title = 2131427364;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int action_container = 2131427428;
+			// aapt resource value: 0x7f0b0065
+			public const int action_container = 2131427429;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int action_context_bar = 2131427400;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int action_divider = 2131427435;
+			// aapt resource value: 0x7f0b006c
+			public const int action_divider = 2131427436;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int action_image = 2131427429;
+			// aapt resource value: 0x7f0b0066
+			public const int action_image = 2131427430;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1756,11 +1769,11 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0026
 			public const int action_mode_close_button = 2131427366;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int action_text = 2131427430;
+			// aapt resource value: 0x7f0b0067
+			public const int action_text = 2131427431;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int actions = 2131427444;
+			// aapt resource value: 0x7f0b0075
+			public const int actions = 2131427445;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int activity_chooser_view_content = 2131427367;
@@ -1780,23 +1793,20 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0022
 			public const int bottom = 2131427362;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int btnClearLL = 2131427458;
-			
-			// aapt resource value: 0x7f0b0081
-			public const int btnLoginLL = 2131427457;
+			// aapt resource value: 0x7f0b0060
+			public const int btn_reset_password = 2131427424;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int buttonPanel = 2131427374;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int cancel_action = 2131427432;
+			// aapt resource value: 0x7f0b0069
+			public const int cancel_action = 2131427433;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int checkbox = 2131427390;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int chronometer = 2131427440;
+			// aapt resource value: 0x7f0b0071
+			public const int chronometer = 2131427441;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int collapseActionView = 2131427358;
@@ -1813,8 +1823,8 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0037
 			public const int customPanel = 2131427383;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int customer = 2131427459;
+			// aapt resource value: 0x7f0b0080
+			public const int customer = 2131427456;
 			
 			// aapt resource value: 0x7f0b005c
 			public const int cvv = 2131427420;
@@ -1828,8 +1838,8 @@ namespace UberEats
 			// aapt resource value: 0x7f0b000c
 			public const int disableHome = 2131427340;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int driver = 2131427460;
+			// aapt resource value: 0x7f0b0081
+			public const int driver = 2131427457;
 			
 			// aapt resource value: 0x7f0b0049
 			public const int edit_query = 2131427401;
@@ -1837,11 +1847,14 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0059
 			public const int email = 2131427417;
 			
+			// aapt resource value: 0x7f0b007f
+			public const int email_sign_in_button = 2131427455;
+			
 			// aapt resource value: 0x7f0b001b
 			public const int end = 2131427355;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int end_padder = 2131427450;
+			// aapt resource value: 0x7f0b007b
+			public const int end_padder = 2131427451;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int expand_activities_button = 2131427368;
@@ -1864,8 +1877,8 @@ namespace UberEats
 			// aapt resource value: 0x7f0b002c
 			public const int icon = 2131427372;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int icon_group = 2131427445;
+			// aapt resource value: 0x7f0b0076
+			public const int icon_group = 2131427446;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int ifRoom = 2131427359;
@@ -1873,26 +1886,20 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0029
 			public const int image = 2131427369;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int info = 2131427441;
+			// aapt resource value: 0x7f0b007c
+			public const int imageView1 = 2131427452;
+			
+			// aapt resource value: 0x7f0b0072
+			public const int info = 2131427442;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int lastName = 2131427415;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int lblPassword = 2131427454;
+			// aapt resource value: 0x7f0b0077
+			public const int line1 = 2131427447;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int lblUsername = 2131427451;
-			
-			// aapt resource value: 0x7f0b0076
-			public const int line1 = 2131427446;
-			
-			// aapt resource value: 0x7f0b0078
-			public const int line3 = 2131427448;
-			
-			// aapt resource value: 0x7f0b0080
-			public const int linearLayoutBtns = 2131427456;
+			// aapt resource value: 0x7f0b0079
+			public const int line3 = 2131427449;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -1900,8 +1907,11 @@ namespace UberEats
 			// aapt resource value: 0x7f0b002b
 			public const int list_item = 2131427371;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int media_actions = 2131427434;
+			// aapt resource value: 0x7f0b007e
+			public const int login = 2131427454;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int media_actions = 2131427435;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int middle = 2131427356;
@@ -1918,14 +1928,14 @@ namespace UberEats
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int notification_background = 2131427443;
+			// aapt resource value: 0x7f0b0074
+			public const int notification_background = 2131427444;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int notification_main_column = 2131427438;
 			
 			// aapt resource value: 0x7f0b006d
-			public const int notification_main_column = 2131427437;
-			
-			// aapt resource value: 0x7f0b006c
-			public const int notification_main_column_container = 2131427436;
+			public const int notification_main_column_container = 2131427437;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int parentPanel = 2131427376;
@@ -1948,14 +1958,14 @@ namespace UberEats
 			// aapt resource value: 0x7f0b005f
 			public const int registerCust = 2131427423;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int restaurant = 2131427461;
+			// aapt resource value: 0x7f0b0082
+			public const int restaurant = 2131427458;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int right_icon = 2131427442;
+			// aapt resource value: 0x7f0b0073
+			public const int right_icon = 2131427443;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int right_side = 2131427438;
+			// aapt resource value: 0x7f0b006f
+			public const int right_side = 2131427439;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
@@ -2011,8 +2021,8 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0010
 			public const int showHome = 2131427344;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int showPopupMenu = 2131427427;
+			// aapt resource value: 0x7f0b0064
+			public const int showPopupMenu = 2131427428;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int showTitle = 2131427345;
@@ -2032,8 +2042,8 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0018
 			public const int src_over = 2131427352;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int status_bar_latest_event_content = 2131427433;
+			// aapt resource value: 0x7f0b006a
+			public const int status_bar_latest_event_content = 2131427434;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int submenuarrow = 2131427393;
@@ -2044,11 +2054,11 @@ namespace UberEats
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int text = 2131427449;
+			// aapt resource value: 0x7f0b007a
+			public const int text = 2131427450;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int text2 = 2131427447;
+			// aapt resource value: 0x7f0b0078
+			public const int text2 = 2131427448;
 			
 			// aapt resource value: 0x7f0b0035
 			public const int textSpacerNoButtons = 2131427381;
@@ -2056,17 +2066,14 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0034
 			public const int textSpacerNoTitle = 2131427380;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int time = 2131427439;
+			// aapt resource value: 0x7f0b0070
+			public const int time = 2131427440;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int title = 2131427373;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int titleDividerNoCustom = 2131427388;
-			
-			// aapt resource value: 0x7f0b007c
-			public const int titleLogin = 2131427452;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int title_template = 2131427386;
@@ -2077,17 +2084,11 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0039
 			public const int topPanel = 2131427385;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int txtPassword = 2131427455;
-			
-			// aapt resource value: 0x7f0b007d
-			public const int txtUsername = 2131427453;
-			
-			// aapt resource value: 0x7f0b0060
-			public const int uberImg = 2131427424;
-			
 			// aapt resource value: 0x7f0b0061
-			public const int uberText = 2131427425;
+			public const int uberImg = 2131427425;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int uberText = 2131427426;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -2095,8 +2096,11 @@ namespace UberEats
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int userLogin = 2131427426;
+			// aapt resource value: 0x7f0b0063
+			public const int userLogin = 2131427427;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int username = 2131427453;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int withText = 2131427361;
@@ -2436,11 +2440,14 @@ namespace UberEats
 			// aapt resource value: 0x7f060012
 			public const int abc_toolbar_collapse_description = 2131099666;
 			
+			// aapt resource value: 0x7f060023
+			public const int app_name = 2131099683;
+			
 			// aapt resource value: 0x7f060022
-			public const int app_name = 2131099682;
+			public const int hello = 2131099682;
 			
 			// aapt resource value: 0x7f060021
-			public const int hello = 2131099681;
+			public const int library_name = 2131099681;
 			
 			// aapt resource value: 0x7f060013
 			public const int search_menu_title = 2131099667;

@@ -7,7 +7,7 @@ using System;
 
 namespace UberEats
 {
-    [Activity(Label = "UberEats", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "Uber Eats", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
 
@@ -24,8 +24,6 @@ namespace UberEats
             SetContentView(Resource.Layout.Main);
 
             btnLogin = FindViewById<Button>(Resource.Id.userLogin);
-            // btnCustReg = FindViewById<Button>(Resource.Id.custRegister);
-            // btnRestReg = FindViewById<Button>(Resource.Id.resRegister);
             showPopupMenu = FindViewById<Button>(Resource.Id.showPopupMenu);
 
 
@@ -57,6 +55,7 @@ namespace UberEats
                     {
                         intent = new Intent(this, typeof(RestaurantRegister));
                         StartActivity(intent);
+
                     }
                 };
                 menu.Show();
