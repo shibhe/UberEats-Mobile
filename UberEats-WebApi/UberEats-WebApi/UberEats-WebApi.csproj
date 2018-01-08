@@ -113,6 +113,8 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Models\DataAccess.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="Models\Products.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
