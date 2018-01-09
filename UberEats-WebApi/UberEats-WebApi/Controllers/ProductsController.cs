@@ -30,7 +30,7 @@ namespace UberEatsWebApi.Controllers
 				return BadRequest(ModelState);
 			}
 
-            obj.AddCust(products);
+           // obj.AddCust(products);
 
             return CreatedAtRoute("DefaultApi", new { id = products.Id }, products);
 		}

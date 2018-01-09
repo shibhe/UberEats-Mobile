@@ -17,14 +17,14 @@ using UberEats.Services;
 
 namespace UberEats.Activities
 {
-    [Activity(Label = "CustomerDashboardActivity")]
+    [Activity(Label = "Customer Dashboard")]
     public class CustomerDashboardActivity : Activity
     {
 
         public RecyclerView mRecyclerView;
         public ProductAdapter mAdapter;
         public List<Products> products = new List<Products>();
-        public string uri = "http://127.0.0.1:8080/api/Product";
+        public string uri = "http://10.0.2.2:8080/api/Product";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,6 +32,9 @@ namespace UberEats.Activities
 
             // Create your application here
             SetContentView(Resource.Layout.CustomerDashboard);
+
+            FetchProducts fetchProduct = new FetchProducts(uri, this, products);
+            fetchProduct.Execute();
 
             mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
@@ -42,8 +45,7 @@ namespace UberEats.Activities
             mAdapter = new ProductAdapter(products, this);
             mRecyclerView.SetAdapter(mAdapter);
 
-            FetchProducts fetchProduct = new FetchProducts(uri,this);
-            fetchProduct.Execute();
+
 
             mAdapter.ItemClick += OnItemClick;
         }

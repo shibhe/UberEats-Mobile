@@ -144,6 +144,7 @@
     <Compile Include="Adapter\ProductAdapter.cs" />
     <Compile Include="Model\Products.cs" />
     <Compile Include="Services\FetchProducts.cs" />
+    <Compile Include="Model\Restaurant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

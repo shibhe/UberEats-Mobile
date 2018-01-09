@@ -14,16 +14,17 @@ namespace UberEats.Services
 {
     public class FetchProducts : AsyncTask
     {
-        string uri;
+       string uri;
         Context context;
         public ProgressDialog progressBar;
         public ProductAdapter mAdapter;
+        public List<Products> products = new List<Products>();
 
-        public FetchProducts(string uri,Context context)
+        public FetchProducts(string uri,Context context, List<Products> products)
         {
             this.uri = uri;
             this.context = context;
-           // this.products = products;
+            this.products = products;
         }
 
         protected override Java.Lang.Object DoInBackground(params Java.Lang.Object[] @params)
@@ -37,9 +38,10 @@ namespace UberEats.Services
             var restaurant = response.Content.ReadAsStringAsync().Result;
             var result = JsonConvert.DeserializeObject<List<Products>>(restaurant);
 
-            foreach (var g in result)
-            {
-                mAdapter.products.Add(g);
+            mAdapter = new ProductAdapter(products, context);
+
+            foreach (var prod in result){
+                mAdapter.products.Add(prod);
             }
 
             return true;

@@ -115,6 +115,7 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Models\Restaurant.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

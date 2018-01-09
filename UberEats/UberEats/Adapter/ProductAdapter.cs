@@ -12,13 +12,15 @@ namespace UberEats.Adapter
     public class ProductAdapter : RecyclerView.Adapter
     {
         public List<Products> products = new List<Products>();
-        Context context;
+
+        public Context context;
         public event EventHandler<int> ItemClick;
 
         public ProductAdapter(List<Products> products, Context context)
         {
             this.products = products;
             this.context = context;
+
         }
 
         public override int ItemCount => products.Count;
@@ -27,10 +29,7 @@ namespace UberEats.Adapter
         {
             ProductViewHolder vh = holder as ProductViewHolder;
 
-            // Load the product image resource from the photo album:
             vh.ProductImg.SetImageBitmap(BitmapFactory.DecodeByteArray(products[position].ItemImage, 0, products[position].ItemImage.Length));
-
-            // Load the product name from the photo album:
             vh.ProductName.Text = products[position].ItemName + " - " + products[position].Description;
             vh.ProductPrice.Text = Convert.ToString(products[position].ItemPrice);
             vh.ProductType.Text = products[position].ItemType;
